@@ -1,0 +1,93 @@
+/*widget*/
+.ts_testimonial_widget .widgettitle{font-weight:bold;}
+.ts-testimonial-section .ts-testimonial-divi{margin: 0;}
+.ts-testimonial-section .owl-controls .owl-buttons div:hover{color: #000;}
+a{-webkit-transition: all 0.3s ease;-moz-transition: all 0.3s ease;transition: all 0.3s ease;}
+.clear{clear: both;}
+.ts-text-center { text-align: center;}
+.ts-testimonial-section{padding: 0px;}
+.ts-testimonial-section .ts-testimonial-divi{ margin: 0; font-size: 14px;line-height: 24px;}
+.ts-testimonial-divi .ts-client-name {font-size: 15px;font-weight: 700;width: 100%; padding-bottom:0}
+.ts-testimonial-divi .ts-client-company {bottom-padding: 0;}
+.ts-testimonial-divi .ts-client-company a {font-size: 14px; line-height:10px;}
+.ts-testimonial-section .owl-controls .owl-buttons div {position: absolute;top: 70%;font-size: 26px;line-height: 26px;margin-top: -14px;}
+.ts-testimonial-section .owl-controls .owl-buttons div:hover{ color: #52b3d9;}
+.ts-testimonial-section .owl-controls .owl-buttons div.owl-prev{ left: 0;}
+.ts-testimonial-section .owl-controls .owl-buttons div.owl-next{right: 0;}
+.ts-testimonial-section .owl-controls .owl-pagination {text-align: center;margin-top: 10px;}
+.ts-testimonial-section .owl-controls .owl-pagination .owl-page{ background-color: #cccccc;width: 12px; height: 12px; display: inline-block;border-radius: 100%;margin: 0 4px;}
+.ts-testimonial-section .owl-controls .owl-pagination .owl-page.active{ background-color: #52b3d9;}
+/* Image Style */
+.ts-client-image {width: 70px;height: 70px; margin: 20px auto 0;}
+.ts-client-image img{-webkit-border-radius: 100%;-moz-border-radius: 100%; border-radius: 100%;}
+.ts-client-testimonial {margin: 20px 0 0;padding: 0;font-size: 14px;font-style: italic;line-height: 22px;}
+.ts_auth_box{ margin:0px 0px; padding:15px 0 0; font-size:25px; color:#0c283d; font-weight:bold; font-style:italic;}
+.ts_auth_box h3, .ts_auth_box h4 {display: inline-block;border: none;}
+.ts_auth_box h4{ color:#ee474c; font-weight:normal;}
+/*.owl-buttons{ display:none !important;}*/
+.ts-not-found-any-testimonial{font-size:15px;font-weight:300; }
+
+.ts_testimonial_widget .widgettitle {
+    background-color: #ed375d;
+    padding: 14px 20px;
+    border-radius: 100px;
+    -moz-border-radius: 100px;
+    -wekit-border-radius: 100px;
+	color: #ffffff;
+	font-weight: bold;
+}	
+
+/******* STYLE 1 ********/
+.ts_slider_1 .ts-client-testimonial{color: #90979d;}
+.ts_slider_1 .ts-testimonial-divi .ts-client-name{color: #0C283D;}
+.ts_slider_1 .ts-testimonial-divi .ts-client-company a,.ts_slider_1 .ts-testimonial-divi .ts-client-company{color: #ee474c;}
+.ts_slider_1.ts-testimonial-section .owl-controls .owl-pagination .owl-page.active{background-color: #0c283d;}
+.ts_slider_1.ts-testimonial-section .owl-controls .owl-pagination .owl-page{background-color: #ffffff;}
+.ts_slider_1 .owl-next,.ts_slider_1 .owl-prev{color: #ffffff;}
+.ts_slider_1 .owl-next .fa.fa-angle-right:hover,.ts_slider_1 .owl-prev .fa.fa-angle-left:hover{color: #0c283d;}
+.ts_slider_1 .ts-text-center,.ts_slider_1 .ts_auth_box,.ts_slider_1.ts-testimonial-section .owl-controls .owl-pagination { text-align: left;}
+.ts_slider_1 .ts-client-image { display: none !important;}
+.ts_slider_1 .owl-pagination{ display: none !important;}
+				
+.ts_slider_1 .widgettitle {
+    color: #ffffff !important;
+    text-align: center !important;
+}
+.ts_slider_1 .owl-controls .owl-buttons div {
+    position: absolute;
+    top: -24px;
+    font-size: 26px;
+    line-height: 26px;
+    margin-top: -14px;
+}
+.ts_slider_1 .owl-controls .owl-buttons div.owl-next {
+    right: 7%;
+}
+.ts_slider_1 .ts-testimonial-divi {
+    margin: 0;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 5px;
+}
+.ts_slider_1 .owl-controls .owl-buttons div.owl-prev {
+    left: 83%;
+}
+.ts_slider_1 {
+    min-height: 194px;
+}
+
+/******* STYLE 2 ********/
+
+.ts_slider_2 .ts-client-testimonial{color: #90979d;}
+.ts_slider_2 .ts-testimonial-divi .ts-client-name{color: #0C283D;}
+.ts_slider_2 .ts-testimonial-divi .ts-client-company a,.ts_slider_2 .ts-testimonial-divi .ts-client-company{color: #ed375d;}
+.ts_slider_2.ts-testimonial-section .owl-controls .owl-pagination .owl-page.active{background-color: #ed375d;}
+.ts_slider_2.ts-testimonial-section .owl-controls .owl-pagination .owl-page{background-color: #0c283d;}
+.ts_slider_2 .owl-next, .ts_slider_2 .owl-prev {color: #0c283d; top: 60px !important;}
+.ts_slider_2 .owl-next .fa.fa-angle-right:hover,.ts_slider_2 .owl-prev .fa.fa-angle-left:hover{color: #ed375d;}
+.ts_slider_2 .ts-text-center,.ts_slider_2 .ts_auth_box,.ts_slider_2.ts-testimonial-section .owl-controls .owl-pagination { text-align: center;}
+.ts_slider_2 .ts-client-image { display: inline-block; text-align: center;}
+.ts_slider_2 {
+    min-height: 260px;
+}
+.ts_slider_2 .owl-pagination{ display: none;}
