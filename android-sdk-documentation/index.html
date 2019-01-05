@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="../xmlrpc.html" />
+
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+
+	<script>var et_site_url='../index.html';var et_post_id='47828';function et_core_page_resource_fallback(a,b){"undefined"===typeof b&&(b=a.sheet.cssRules&&0===a.sheet.cssRules.length);b&&(a.onerror=null,a.onload=null,a.href?a.href=et_site_url+"/?et_core_page_resource="+a.id+et_post_id:a.src&&(a.src=et_site_url+"/?et_core_page_resource="+a.id+et_post_id))}
+</script><title>Android SDK Documentation - Appmediation</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v7.8 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="index.html" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Android SDK Documentation - Appmediation" />
+<meta property="og:url" content="https://appmediation.com/android-sdk-documentation/" />
+<meta property="og:site_name" content="Appmediation" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Android SDK Documentation - Appmediation" />
+<script type='application/ld+json'>{"@context":"https:\/\/schema.org","@type":"Organization","url":"https:\/\/appmediation.com\/","sameAs":[],"@id":"https:\/\/appmediation.com\/#organization","name":"appmediation","logo":""}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='../../maxcdn.bootstrapcdn.com/index.html' />
+<link rel='dns-prefetch' href='../../fonts.googleapis.com/index.html' />
+<link rel='dns-prefetch' href='../../s.w.org/index.html' />
+<link rel="alternate" type="application/rss+xml" title="Appmediation &raquo; Feed" href="../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Appmediation &raquo; Comments Feed" href="../comments/feed/index.html" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/appmediation.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.9"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<meta content="App Mediation v.1.0" name="generator"/><style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='wp-color-picker-css'  href='../wp-admin/css/color-picker.mind87f.css?ver=4.9.9' type='text/css' media='all' />
+<link rel='stylesheet' id='bxslider-css-css'  href='../wp-content/plugins/kiwi-logo-carousel/third-party/jquery.bxslider/jquery.bxsliderd87f.css?ver=4.9.9' type='text/css' media='' />
+<link rel='stylesheet' id='kiwi-logo-carousel-styles-css'  href='../wp-content/plugins/kiwi-logo-carousel/custom-stylesd87f.css?ver=4.9.9' type='text/css' media='' />
+<link rel='stylesheet' id='sb_instagram_styles-css'  href='../wp-content/plugins/instagram-feed/css/sb-instagram.min73b9.css?ver=1.10.1' type='text/css' media='all' />
+<link rel='stylesheet' id='sb-font-awesome-css'  href='../../maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='bodhi-svgs-attachment-css'  href='../wp-content/plugins/svg-support/css/svgs-attachmentd87f.css?ver=4.9.9' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-parent-css'  href='../wp-content/themes/Divi/styled87f.css?ver=4.9.9' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-style-css'  href='../wp-content/themes/app-mediation/styleee9a.css?ver=3.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='et-builder-googlefonts-cached-css'  href='../../fonts.googleapis.com/css13be.css?family=Open+Sans%3A300%2C300italic%2Cregular%2Citalic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic&amp;ver=4.9.9#038;subset=cyrillic,greek,vietnamese,latin,greek-ext,latin-ext,cyrillic-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='socicon-css'  href='../wp-content/plugins/social-icons-widget-by-wpzoom/assets/css/sociconad98.css?ver=20180625' type='text/css' media='all' />
+<link rel='stylesheet' id='genericons-css'  href='../wp-content/plugins/social-icons-widget-by-wpzoom/assets/css/genericonsad98.css?ver=20180625' type='text/css' media='all' />
+<link rel='stylesheet' id='fontawesome-css'  href='../wp-content/plugins/social-icons-widget-by-wpzoom/assets/css/font-awesome.minad98.css?ver=20180625' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css'  href='../wp-includes/css/dashicons.mind87f.css?ver=4.9.9' type='text/css' media='all' />
+<link rel='stylesheet' id='eticonfont-styles-css'  href='../wp-content/plugins/elegant-themes-icons/assets/css/etfonts-styled87f.css?ver=4.9.9' type='text/css' media='all' />
+<link rel='stylesheet' id='easy-fontawesome-for-divi-builder-css'  href='../wp-content/plugins/Easy-FontAwesome-for-Divi-builder/easy-fontawesome-for-divi-builderd87f.css?ver=4.9.9' type='text/css' media='all' />
+<link rel='stylesheet' id='ts_owl-carousel-css-css'  href='../wp-content/plugins/divi-testimonial-slider/assets/css/owl.carousel.css' type='text/css' media='all' />
+<link rel='stylesheet' id='ts_font-awesome-css-css'  href='../wp-content/plugins/divi-testimonial-slider/assets/css/font-awesome.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='ts_divi_testimonial_slider_custom_css-css'  href='../wp-content/plugins/divi-testimonial-slider/assets/css/divi_testimonial_slider_module_v.1.0d87f.css?ver=4.9.9' type='text/css' media='all' />
+<link rel='stylesheet' id='ts_widget_style-css'  href='../wp-content/plugins/divi-testimonial-slider/assets/css/ts_widget_style68b3.css?ver=1' type='text/css' media='all' />
+<link rel='stylesheet' id='ts_archive_testimonial-css'  href='../wp-content/plugins/divi-testimonial-slider/assets/css/archive_testimoniald87f.css?ver=4.9.9' type='text/css' media='all' />
+<script type='text/javascript' src='../wp-includes/js/jquery/jqueryb8ff.js?ver=1.12.4'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery-migrate.min330a.js?ver=1.4.1'></script>
+<script type='text/javascript' src='../wp-content/plugins/handl-utm-grabber/js/js.cookied87f.js?ver=4.9.9'></script>
+<script type='text/javascript' src='../wp-content/plugins/handl-utm-grabber/js/handl-utm-grabberd87f.js?ver=4.9.9'></script>
+<link rel='https://api.w.org/' href='../wp-json/index.html' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc0db0.html?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.9.9" />
+<link rel='shortlink' href='../index224c.html?p=47828' />
+<link rel="alternate" type="application/json+oembed" href="../wp-json/oembed/1.0/embed3f0c.json?url=https%3A%2F%2Fappmediation.com%2Fandroid-sdk-documentation%2F" />
+<link rel="alternate" type="text/xml+oembed" href="../wp-json/oembed/1.0/embed5979?url=https%3A%2F%2Fappmediation.com%2Fandroid-sdk-documentation%2F&amp;format=xml" />
+<style></style> 
+  <script>
+    jQuery(document).ready(function($){
+      $('.et_pb_main_blurb_image .et-pb-icon-circle').each(function() {
+        var correctSize = 2*parseFloat($(this).css('font-size'));
+        $(this).css({'width' : correctSize + 'px', 'height' : correctSize + 'px'});
+		if ($(this).html() === ""){
+			var padding = 0.75 * parseFloat($(this).css('padding'));
+			$(this).css('padding', padding);
+		}
+      });
+      $('ul.et-social-icons').each(function(index, value){
+              });
+    });
+  </script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><link rel="shortcut icon" href="../wp-content/uploads/2017/10/AM_Favicon.png" /><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108058899-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-108058899-1');
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NV2RR9V');</script>
+<!-- End Google Tag Manager -->
+
+<script>
+(function($) {
+    $(window).on('load resize', function() {
+        $('.et_fullscreen_slider').each(function() {
+            et_fullscreen_slider($(this));
+        });
+    });
+    function et_fullscreen_slider(et_slider) {
+        var et_viewport_height = $(window).height(),
+            et_slider_height = $(et_slider).find('.et_pb_slider_container_inner').innerHeight(),
+            $admin_bar = $('#wpadminbar'),
+            $main_header = $('#main-header'),
+            $top_header = $('#top-header');
+        $(et_slider).height('auto');
+        if ($admin_bar.length) {
+            var et_viewport_height = et_viewport_height - $admin_bar.height();
+        }
+        if ($top_header.length) {
+            var et_viewport_height = et_viewport_height - $top_header.height();
+        }
+        if (!$('.et_transparent_nav').length && !$('.et_vertical_nav').length) {
+            var et_viewport_height = et_viewport_height - $main_header.height();
+        }
+        if (et_viewport_height > et_slider_height) {
+            $(et_slider).height(et_viewport_height);
+        }
+    }
+})(jQuery);
+</script>
+
+<script src="../../use.fontawesome.com/6e0680529b.js"></script>
+
+<script type="text/javascript">
+var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || {widgetcode:"c56bb92b7c1b500fe2183ef2d4840e4dc7ab14b73811789c1c946d1e8e1067abaa8c5b5af7592800f2b9ad5ab0f44352", values:{},ready:function(){}};var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;s.src="../../salesiq.zoho.eu/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");
+</script><link rel="icon" href="../wp-content/uploads/2017/10/AM_Favicon.png" sizes="32x32" />
+<link rel="icon" href="../wp-content/uploads/2017/10/AM_Favicon.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="../wp-content/uploads/2017/10/AM_Favicon.png" />
+<meta name="msapplication-TileImage" content="https://appmediation.com/wp-content/uploads/2017/10/AM_Favicon.png" />
+<link rel="stylesheet" id="et-core-unified-cached-inline-styles" href="../wp-content/cache/et/47828/et-core-unified-1546617880729.min.css" onerror="et_core_page_resource_fallback(this, true)" onload="et_core_page_resource_fallback(this)" /></head>
+<body class="page-template-default page page-id-47828 et_bloom et_button_no_icon et_pb_button_helper_class et_fullwidth_nav et_fixed_nav et_show_nav et_cover_background et_pb_gutter et_pb_gutters3 et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_pb_footer_columns4 et_header_style_left et_pb_svg_logo et_pb_pagebuilder_layout et_smooth_scroll et_right_sidebar et_divi_theme et_minified_js et_minified_css">
+	<div id="page-container">
+
+	
+	
+			<header id="main-header" data-height-onload="66">
+			<div class="container clearfix et_menu_container">
+							<div class="logo_container">
+					<span class="logo_helper"></span>
+					<a href="../index.html">
+						<img src="../wp-content/uploads/2017/10/AM_Logo.svg" alt="Appmediation" id="logo" data-height-percentage="54" />
+					</a>
+				</div>
+							<div id="et-top-navigation" data-height="66" data-fixed-height="54">
+											<nav id="top-menu-nav">
+						<ul id="top-menu" class="nav"><li id="menu-item-49564" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-49564"><a href="#">Product</a>
+<ul class="sub-menu">
+	<li id="menu-item-205" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-205"><a href="../features/index.html">Features</a></li>
+	<li id="menu-item-204" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-204"><a href="../formats/index.html">Ad Formats</a></li>
+	<li id="menu-item-49755" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49755"><a href="../payments/index.html">Payments</a></li>
+	<li id="menu-item-48251" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48251"><a href="../faq/index.html">FAQ</a></li>
+</ul>
+</li>
+<li id="menu-item-49566" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-49566"><a href="#">Company</a>
+<ul class="sub-menu">
+	<li id="menu-item-49498" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49498"><a href="../about-us/index.html">About Us</a></li>
+	<li id="menu-item-49565" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49565"><a href="../contact/index.html">Contact</a></li>
+</ul>
+</li>
+<li id="menu-item-48889" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48889"><a href="../blog/index.html">Blog</a></li>
+<li id="menu-item-47569" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47569"><a href="../documentation/index.html">SDK Docs</a></li>
+<li id="menu-item-49562" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49562"><a href="https://support.appmediation.com/portal/home">Support</a></li>
+<li id="menu-item-48194" class="jointoday_button menu-item menu-item-type-custom menu-item-object-custom menu-item-48194"><a href="https://myappmediation.com/auth/login">Login</a></li>
+<li id="menu-item-47726" class="jointoday_button menu-item menu-item-type-custom menu-item-object-custom menu-item-47726"><a href="https://myappmediation.com/auth/create-account">SIGN UP</a></li>
+</ul>						</nav>
+					
+					
+					
+					
+					<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page">Select Page</span>
+					<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+				</div>
+			</div>				</div> <!-- #et-top-navigation -->
+			</div> <!-- .container -->
+			<div class="et_search_outer">
+				<div class="container et_search_form_container">
+					<form role="search" method="get" class="et-search-form" action="https://appmediation.com/">
+					<input type="search" class="et-search-field" placeholder="Search &hellip;" value="" name="s" title="Search for:" />					</form>
+					<span class="et_close_search_field"></span>
+				</div>
+			</div>
+		</header> <!-- #main-header -->
+			<div id="et-main-area">
+	
+<div id="main-content">
+
+
+			
+				<article id="post-47828" class="post-47828 page type-page status-publish hentry">
+
+				
+					<div class="entry-content">
+					<div class="et_pb_section et_pb_section_0 et_section_regular">
+				
+				
+				
+				
+					<div class="et_pb_with_border et_pb_row et_pb_row_0 et_pb_row_fullwidth">
+				<div class="et_pb_column et_pb_column_3_4 et_pb_column_0    et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				<div class="et_pb_with_border et_pb_module et_pb_text et_pb_text_0 et_pb_bg_layout_light  et_pb_text_align_left">
+				
+				
+				<div class="et_pb_text_inner">
+					<h2>Android Integration Documentation</h2>
+<h3><a name="1"></a>1. API Key</h3>
+<p><strong>Register your app on the appmediation platform for obtaining the API key&nbsp;</strong></p>
+<h3><a name="2"></a>2. Android Demo App</h3>
+<p>Download appmediation demo application with all the new features and integration from&nbsp;<a href="https://github.com/appmediation/android-sdk">here</a>.</p>
+<h3><a name="3"></a>3. Integration Setup</h3>
+<h4 style="padding-left: 30px;"><a name="3.1"></a>3.1 Prerequisites</h4>
+<ul style="margin-left: 30px;">
+<li>Use Android Studio <em><strong>1.0</strong> </em>or higher</li>
+<li>Target Android API level <em><strong>16</strong></em> or higher</li>
+<li>Compile SDK version <em><strong>24</strong></em> or higher, for lower versions please contact support.</li>
+</ul>
+<h4 style="padding-left: 30px;"><a name="3.2"></a>3.2 Gradle Integration</h4>
+<p style="padding-left: 30px;">To add appmediation to your project you need to follow this simple steps:</p>
+<ul style="margin-left: 30px; ; padding-bottom: 0px;">
+<li>Include&nbsp;play-services-ads&nbsp;and&nbsp;appcompat-v7 library in your project</li>
+</ul>
+<blockquote style="margin-left: 60px;">
+<pre>dependencies {
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support:recyclerview-v7:26.1.0'
+    compile 'com.google.android.gms:play-services-ads:15.0.1'
+}</pre>
+</blockquote>
+<ul style="margin-left: 30px; ; padding-bottom: 0px;">
+<li>Update android packaging options like in example below</li>
+</ul>
+<blockquote style="margin-left: 60px;">
+<pre>android {
+    ....
+    <strong>packagingOptions {
+        pickFirst 'publicsuffixes.gz'
+    }</strong>
+}</pre>
+</blockquote>
+<ul style="margin-left: 30px; padding-bottom: 0px;">
+<li>Download <a href="../../storage.googleapis.com/appmediation-sdk/appmediation-android.zip">this</a> archive and add all libraries from it to your project. You can read how to do that&nbsp;<a href="https://appmediation.com/how-to-add-local-libraries-to-gradle" target="_blank" rel="nofollow noopener">here</a>.</li>
+</ul>
+<h4 style="padding-left: 30px;"><a name="3.3"></a>3.3 Enable Multidex</h4>
+<p style="padding-left: 30px;">Our SDK contains many ad networks to provide best performance metrics. You can see a full list in chapter <a href="index.html#5">5. Third-Party Integration Versions</a>. Because of many libraries that we are using your app might encounter 65K methods limit. To prevent this issue from happening we recommend to enable Multidex. You can read how to do it here: <a href="https://developer.android.com/studio/build/multidex.html">Enable Multidex for Apps with Over 64K Methods</a></p>
+<h4 style="padding-left: 30px;"><a name="3.4"></a>3.4 Manifest setup</h4>
+<p style="padding-left: 30px;">You need to define some providers and receivers so that our partners could work properly. Here is an example with bold lines being the parts that you need to add to your AndroidManifest.xml file:</p>
+<blockquote>
+<pre><em>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.appmediation.testapp"&gt;
+
+    &lt;application
+        android:name=".ExampleApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/AppTheme"&gt;
+        &lt;activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"&gt;
+            &lt;intent-filter&gt;
+                &lt;action android:name="android.intent.action.MAIN" /&gt;
+
+                &lt;category android:name="android.intent.category.LAUNCHER" /&gt;
+            &lt;/intent-filter&gt;
+        &lt;/activity&gt;
+
+        <strong>&lt;!-- appmediation and partners --&gt;
+        &lt;!-- StatApp --&gt;
+        &lt;receiver android:name="com.startapp.android.publish.common.metaData.BootCompleteListener" &gt;
+            &lt;intent-filter&gt;
+                &lt;action android:name="android.intent.action.BOOT_COMPLETED" /&gt;
+            &lt;/intent-filter&gt;
+        &lt;/receiver&gt;
+        &lt;!-- Ogury --&gt;
+        &lt;receiver android:name="io.presage.receiver.NetworkChangeReceiver"&gt;
+            &lt;intent-filter&gt;
+                &lt;action android:name="android.net.conn.CONNECTIVITY_CHANGE" /&gt;
+                &lt;action android:name="android.net.wifi.WIFI_STATE_CHANGED" /&gt;
+                &lt;action android:name="io.presage.receiver.NetworkChangeReceiver.ONDESTROY" /&gt;
+            &lt;/intent-filter&gt;
+        &lt;/receiver&gt;
+        &lt;receiver android:name="io.presage.receiver.AlarmReceiver" /&gt;
+        &lt;provider
+            android:name="io.presage.provider.PresageProvider"
+            android:authorities="${applicationId}.PresageProvider"
+            android:enabled="true"
+            android:exported="true" /&gt;</strong>
+    &lt;/application&gt;
+
+&lt;/manifest&gt;
+</em></pre>
+</blockquote>
+<p style="padding-left: 30px;"><strong>Note:</strong> If you are using AdMob version 17.0.0 or higher then you are required to specify a &lt;meta-data&gt; tag with key com.google.android.gms.ads.APPLICATION_ID in your AndroidManifest.xml. For more details contact your Partner Manager. Example:</p>
+<blockquote>
+<pre><em>
+&lt;manifest&gt;
+    &lt;application&gt;
+        <strong>&lt;meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ADMOB_APP_ID"/&gt;
+</strong>
+    &lt;/application&gt;
+&lt;/manifest&gt;
+</em></pre>
+</blockquote>
+<p>&nbsp;</p>
+<h4 style="padding-left: 30px;"><a name="3.5"></a>3.5 GDPR (EU &amp; EEA Users Only)</h4>
+<p style="padding-left: 30px;">You need to obtain end-users consent from EU &amp; EEA users before using our services. And we have developed three ways to help you do that. Refer to options below:</p>
+<h4 style="padding-left: 60px;"><a name="3.5.1"></a>3.5.1 Smart Consent</h4>
+<p style="padding-left: 60px;">By default, this feature is enabled and if you want to disable it you would have to call &#8216;showConsentAutomatically(false)&#8217; before displaying any ads. This feature checks requests&#8217;&nbsp; country of origin and then displays a consent window before the first ad if its required.</p>
+<h4 style="padding-left: 60px;"><a name="3.5.2"></a>3.5.2 Consent Window</h4>
+<p style="padding-left: 60px;">You can display appmediation consent window any time you would like. Each time when you are required to collect end-user data consent you can call Consent Window. To check if SDK already had response saved you can use &#8216;wasConsentSet()&#8217; method. Here is an example:</p>
+<blockquote style="margin-left: 60px;">
+<pre>if (!AMSDK.wasConsentSet(activity)) {
+    AMSDK.showGdprNotice(activity, new GdprDialogListener() {
+	@Override
+	public void onOptionSelected(boolean gdprConsent) {
+	    // user has selected an option to agree or to disagree
+	}
+
+	@Override
+	public void onCancelled() {
+	    // window was canceled
+	}
+    });
+}</pre>
+</blockquote>
+<p style="padding-left: 60px;"><strong>Note:</strong> You can also use this method without setting any listeners: AMSDK.showGdprNotice(activity, null)</p>
+<p style="padding-left: 60px;"><strong>Note:</strong> You don&#8217;t have to use AMSDK.setGdprConsent() in onOptionSelected, it will be called automatically.</p>
+<h4 style="padding-left: 60px;"><a name="3.5.3"></a>3.5.3 Consent Function</h4>
+<p style="padding-left: 60px;">Call this function to set user consent preferences and it is highly suggested to set this method before initializing Appmediation SDK, otherwise, the SDK will initialize with default false which can lead to non-personalised ads.</p>
+<blockquote style="margin-left: 60px;">
+<pre>AMSDK.setGdprConsent(activity, userConsent);
+</pre>
+</blockquote>
+<p style="padding-left: 60px;">Possible values for &#8216;userConsent&#8217; above are: AMSDK.GdprConsent.AGREE, AMSDK.GdprConsent.DISAGREE, AMSDK.GdprConsent.NOT_REQUIRED, AMSDK.GdprConsent.UNKNOWN</p>
+<h4 style="padding-left: 30px;"><a name="3.6"></a>3.6 SDK Initialisation</h4>
+<p style="padding-left: 30px;">Before loading ads, initialize the appmediation SDK by calling AMSDK.init() with your app key. We strongly recommend doing this for every activity that is using appmediation ads on &#8216;onCreate&#8217; method. Also, note that your app key and package name should match to those that are mentioned in your app settings in appmediation pannel.</p>
+<p style="padding-left: 30px;">Here&#8217;s an example of the appmediation SDK initialization. You need to add only highlighted part to your &#8216;onCreate&#8217; method.</p>
+<blockquote style="margin-left: 30px;">
+<pre>public class ExampleActivity extends Activity {
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+     super.onCreate(savedInstanceState);
+<strong><span style="color: #333333;">     AMSDK.init(this, "YOUR_APP_KEY");</span></strong>
+  }
+}
+</pre>
+</blockquote>
+<h4 style="padding-left: 30px;"><a name="3.7"></a>3.7 Interstitial Ads</h4>
+<p style="padding-left: 30px;">Interstitial ads are full-screen ads that cover the interface of the host application. They can be full screen static interstitial ads or video ads.</p>
+<h5 style="padding-left: 60px;"><a name="3.7.1"></a>3.7.1 Basic</h5>
+<p style="padding-left: 60px;">To display interstitial ads you just need to call this single line of code:</p>
+<p><code></code></p>
+<blockquote style="margin-left: 60px;">
+<pre><strong>AMInterstitial.show(activity);</strong></pre>
+</blockquote>
+<h5 style="padding-left: 60px;"><a name="3.7.2"></a>3.7.2 Advanced</h5>
+<h6 style="padding-left: 90px;"><a name="3.7.2.1"></a>3.7.2.1 Delegates</h6>
+<p style="padding-left: 90px;">If you would like to have more control over the interstitial then you can set up interstitial listener before requesting ads:</p>
+<p><code></code></p>
+<blockquote style="margin-left: 90px;">
+<pre><strong>AMInterstitial.setListener(new AMListener() {</strong>
+  <strong>@Override</strong>
+ <strong> public void onLoaded() {</strong>
+ <strong>    Log.d("Interstitial ad", "onLoaded");</strong>
+ <strong> }</strong></pre>
+<pre><strong>  @Override</strong>
+ <strong> public void onFailed(AMError error) {</strong>
+ <strong>    Log.d("Interstitial ad", "onFailed: " + error.name());</strong>
+ <strong> }</strong>
+
+<strong>  @Override</strong>
+ <strong> public void onShowed() {</strong>
+ <strong>    Log.d("Interstitial ad", "onShowed");</strong>
+ <strong> }</strong>
+
+<strong>  @Override</strong>
+ <strong> public void onClosed() {</strong>
+ <strong>    Log.d("Interstitial ad", "onClosed");</strong>
+ <strong> }</strong>
+
+<strong>  @Override</strong>
+ <strong> public void onClicked() {</strong>
+ <strong>    Log.d("Interstitial ad", "onClicked");</strong>
+ <strong> }</strong>
+<strong>});</strong></pre>
+</blockquote>
+<h6 style="padding-left: 90px;"><a name="3.7.2.2"></a>3.7.2.2 Manual pre-loading</h6>
+<p style="padding-left: 90px;">By default, SDK prepares next interstitial ad so that you would always have something to display and in case you want to control manually when interstitial is pre-loaded then you can set&nbsp;<a href="#4.2">AutoLoad</a> off and use&nbsp;<code>AMInterstitial.load(Activity)</code> to start pre-loading. When it is ready you will receive a callback in&nbsp;<code>AMListener</code> if you set it up or you could use&nbsp;<code>AMInterstitial.isReady()</code> to check it manually. After&nbsp;the interstitial ad is pre-loaded you can use <code>AMInterstitial.show(Activity)</code> to display it.</p>
+<p style="padding-left: 90px;">P.S: Only one interstitial ad can be pre-loaded at a time.</p>
+<h4 style="padding-left: 30px;"><a name="3.8"></a>3.8 Rewarded Video</h4>
+<p style="padding-left: 30px;">Rewarded video ads are full-screen video ads that users have the option of watching in full in exchange for in-app rewards.</p>
+<h5 style="padding-left: 60px;"><a name="3.8.1"></a>3.8.1 Basic</h5>
+<p style="padding-left: 60px;">To display rewarded video ads you just need to call this single line of code:</p>
+<blockquote style="margin-left: 60px;">
+<pre><strong>AMRewardedVideo.show(activity);</strong></pre>
+</blockquote>
+<h5 style="padding-left: 60px;"><a name="3.8.2"></a>3.8.2 Advanced</h5>
+<h6 style="padding-left: 90px;"><a name="3.8.2.1"></a>3.8.2.1 Delegates</h6>
+<p style="padding-left: 90px;">If you would like to have more control over your rewarded video ads then you can set up rewarded video listeners before requesting ads:</p>
+<p><code></code></p>
+<blockquote style="margin-left: 90px;">
+<pre><strong>AMRewardedVideo.setListener(new AMRewardedListener() {</strong>
+ <strong> @Override</strong>
+ <strong> public void onLoaded(String currency, String amount) {</strong>
+ <strong>    String rewardInfo = amount + " " + currency;</strong>
+ <strong>    Log.d("Rewarded ad", "onLoaded: " + rewardInfo);</strong>
+ <strong> }</strong>
+
+<strong>  @Override</strong>
+ <strong> public void onCompleted(String currency, String amount) {</strong>
+ <strong>    String rewardInfo = amount + " " + currency;</strong>
+ <strong>    Log.d("Rewarded ad", "onCompleted: " + rewardInfo);</strong>
+ <strong> }</strong>
+
+<strong>  @Override</strong>
+ <strong> public void onFailed(AMError error) {</strong>
+ <strong>    Log.d("Rewarded ad", "onFailed: " + error.name());</strong>
+ <strong> }</strong>
+
+<strong>  @Override</strong>
+ <strong> public void onShowed() {</strong>
+ <strong>    Log.d("Rewarded ad", "onShowed");</strong>
+ <strong> }</strong>
+
+<strong>  @Override</strong>
+ <strong> public void onClosed() {</strong>
+ <strong>    Log.d("Rewarded ad", "onClosed");</strong>
+ <strong> }</strong>
+
+<strong>  @Override</strong>
+ <strong> public void onClicked() {</strong>
+ <strong>    Log.d("Rewarded ad", "onClicked");</strong>
+ <strong> }</strong>
+<strong>});</strong></pre>
+</blockquote>
+<h6 style="padding-left: 90px;"><a name="3.8.2.2"></a>3.8.2.2 Manual pre-loading</h6>
+<p style="padding-left: 90px;">By default, SDK prepares next rewarded video ad so that you would always have something to display and in case you want to control manually when interstitial is pre-loaded then you can set <a href="#4.2">AutoLoad</a> off and use <code>AMRewardedVideo.load(Activity)</code> to start pre-loading. When it is ready you will receive a callback in&nbsp;<code>AMRewardedListener</code> if you set it up or you could use&nbsp;<code>AMRewardedVideo.isReady()</code> to check it manually. After the rewarded video ad is pre-loaded you can use <code>AMRewardedVideo.show(Activity)</code> to display it.</p>
+<p style="padding-left: 90px;">P.S: Only one rewarded video ad can be pre-loaded at a time.</p>
+<h5 style="padding-left: 60px;"><a name="3.8.3"></a>3.8.3 Credit Reward</h5>
+<h5 style="padding-left: 90px;"><a name="3.8.3.1"></a>3.8.3.1 Client Side (SDK Callback)</h5>
+<p style="padding-left: 90px;">When user has watched video completely then use &#8220;onCompleted&#8221; callback to reward user.</p>
+<blockquote style="margin-left: 90px;">
+<pre><strong>@Override
+public void onCompleted(String currency, String amount) {</strong>
+    Log.d("Rewarded ad", "onCompleted: " + amount + " " + currency);
+<strong>}</strong></pre>
+</blockquote>
+<h5 style="padding-left: 90px;"><a name="3.8.3.2"></a>3.8.3.2 Server Side (S2S Callback)</h5>
+<p style="padding-left: 90px;">We also support server-side&nbsp;reward callbacks to securely pass reward data. Server-to-server callbacks are sent to your server when a user has watched an ad. You can use these callbacks to reward players with virtual goods and to e.g. detect and prevent cheating.</p>
+<p style="padding-left: 90px;">By default it is not enabled and you can enable them by following steps from <a href="https://support.appmediation.com/portal/kb/articles/rewarded-video-s2s-callback">here</a>.</p>
+<p style="padding-left: 90px;">To use S2S Callback feature, you must set user ID by using&nbsp;<strong>AMSDK.setUserIdentifier(&#8220;User#123&#8221;)</strong> method before SDK initialisation</p>
+<p>&nbsp;</p>
+<h4 style="padding-left: 30px;"><a name="3.9"></a>3.9 Banner Ads</h4>
+<p style="padding-left: 30px;">Banner ads are rectangular image or text ads that occupy a spot within an app&#8217;s layout. They stay on the screen while users are interacting with the app, and can refresh automatically after a certain period of time.</p>
+<h5 style="padding-left: 60px;"><a name="3.9.1"></a>3.9.1 Basic</h5>
+<p style="padding-left: 60px;">To display banner ads you just need to call one line of code.</p>
+<p><code></code></p>
+<blockquote style="margin-left: 60px;">
+<pre><strong>AMBanner.show(activity, Gravity.BOTTOM); // or you could use Gravity.TOP</strong></pre>
+</blockquote>
+<h5 style="padding-left: 60px;"><a name="3.9.2"></a>3.9.2&nbsp;&nbsp;Advanced</h5>
+<h6 style="padding-left: 90px;"><a name="3.9.2.1"></a>3.9.2.1 Delegates</h6>
+<p style="padding-left: 90px;">If you would like to have more control over banner ads then you can set up banner listeners before requesting ads:</p>
+<blockquote style="margin-left: 90px;">
+<pre><strong>AMBanner.setListener(new AMBannerListener() {
+  @Override 
+  public void onLoaded() {
+     Log.d("Banner ad", "onLoaded");
+  }
+</strong>  
+  <strong>@Override</strong>
+ <strong> public void onFailed(AMError error) {</strong>
+ <strong>    Log.d("Banner ad", "onFailed: " + error.name());
+</strong>
+ <strong> }</strong>
+
+<strong>  @Override</strong>
+ <strong> public void onShowed() {</strong>
+ <strong>    Log.d("Banner ad", "onShowed");</strong>
+ <strong> }</strong>
+
+<strong>  @Override</strong>
+ <strong> public void onClicked() {</strong>
+ <strong>    Log.d("Banner ad", "onClicked");</strong>
+ <strong> }</strong>
+<strong>});</strong></pre>
+</blockquote>
+<h6 style="padding-left: 90px;"><a name="3.9.2.2"></a>3.9.2.2 Custom position</h6>
+<p style="padding-left: 90px;">If you would like to have more control over where the banner is displayed you can add any view container to your layout (view container should extend <code>ViewGroup</code>) and give it a unique ID. Then you can use <code>AMBanner.showInView(Activity, viewId)</code> to display appmediation banner in that view</p>
+<h6 style="padding-left: 90px;"><a name="3.9.2.3"></a>3.9.2.3 Auto-refresh</h6>
+<p style="padding-left: 90px;">By default banners are automatically refreshed every 20 seconds. But if you would like to disable auto refresh you can turn it off by using <code>AMBanner.setAutoRefresh(false)</code>.</p>
+<h6 style="padding-left: 90px;"><a name="3.9.2.4"></a>3.9.2.4 Banner Sizes</h6>
+<p style="padding-left: 90px;">A banner can be set up to have one of the following size options:</p>
+<table style="margin-left: 90px;">
+<tbody>
+<tr>
+<td><b>Option</b></td>
+<td><b>Size (dp)</b></td>
+</tr>
+<tr>
+<td>STANDARD</td>
+<td>320x50</td>
+</tr>
+<tr>
+<td>LARGE</td>
+<td>728x90</td>
+</tr>
+<tr>
+<td>FULL_WIDTH</td>
+<td>Dynamic*</td>
+</tr>
+</tbody>
+</table>
+<p style="padding-left: 90px; padding-top: 0px;">*Dynamic &#8211; banner width will be the same as the screen width. Banner height will be 50dp for handphones and 90dp for tablets</p>
+<p style="padding-left: 90px;">By default size is set to <code>FULL_WIDTH</code>, but you can change this by adding enum&nbsp;<code>AMBannerSize</code> as a parameter to&nbsp;<code>AMBanner.show</code>. Here is an example:</p>
+<blockquote style="margin-left: 90px;">
+<pre><strong>AMBanner.show(BannerActivity.this, AMBannerSize.STANDARD, Gravity.TOP);</strong>
+</pre>
+</blockquote>
+<h3></h3>
+<h3><a name="4"></a>4. Advanced Features</h3>
+<h4 style="padding-left: 30px;"><a name="4.1"></a>4.1 Test Mode</h4>
+<p style="padding-left: 30px;">It provides the functionality to display test ads for integration testing and 100% fill. You should set test mode before initializing the SDK.</p>
+<blockquote style="margin-left: 30px;"><p><code>AMSDK.setTestMode(true);</code></p></blockquote>
+<h4 style="padding-left: 30px;"><a name="4.2"></a>4.2 Auto Load</h4>
+<p style="padding-left: 30px;">Auto load feature is on by default to make integration simpler. For interstitial and rewarded video it: 1) Prepares next ad right after SDK is initialized 2) Prepares next ad when the previous ad has been shown For banner, it loads new banner every 20 seconds</p>
+<p style="padding-left: 30px;">You can disable this feature by calling&nbsp;<code>AMSDK.setAutoLoad(false)</code> function and it will be disabled for all ad formats. It is also recommended to call this before initializing SDK.</p>
+<h4 style="padding-left: 30px;"><a name="4.3"></a>4.3 Error codes</h4>
+<p style="padding-left: 30px;">All ad formats support error reporting. Errors will be returned on <code>onFailed(AMError error)</code> if corresponding ad listener is set up. Overall you can stumble upon this errors:</p>
+<blockquote style="margin-left: 30px;">
+<pre>@Override
+public void onFailed(AMError error) {
+     Log.d("Banner ad", "onFailed: " + error.name());
+     switch (error) {<strong>
+          case NO_ADS:
+               // we have no ads to serve or this zone is not set up correctly.
+               // if you receive this error it is best to contact support@appmediation.com or your account manager
+               break;
+          case COMUNICATION_ERROR:
+               // SDK was not able to get a response from appmediation server.
+               // possible solution - check internet connection
+               break;
+          case NOT_INIT:
+               // you forgot to initialize SDK or there was error initializing.
+               // possible solution - check that your package id and app key should be same as registered in publisher panel
+               break;
+          case INTERNAL_ERROR:
+               // you shouldn't be able to receive this error, but if you did receive it - please contact support@appmediation.com or your account manager
+               break;
+</strong>     }
+}
+</pre>
+</blockquote>
+<h3><a name="5"></a>5. Third-Party Integration Versions</h3>
+<table>
+<tbody>
+<tr>
+<td>Network Name</td>
+<td>Version</td>
+<td>Supported AMSDK version</td>
+</tr>
+<tr>
+<td>Unity</td>
+<td>&nbsp;2.2.1</td>
+<td>&nbsp;≥1.0.0</td>
+</tr>
+<tr>
+<td>Tapjoy</td>
+<td>&nbsp;11.12.0</td>
+<td>&nbsp;≥1.0.0</td>
+</tr>
+<tr>
+<td>Applovin</td>
+<td>&nbsp;8.0.0</td>
+<td>&nbsp;≥1.0.0</td>
+</tr>
+<tr>
+<td>Inmobi</td>
+<td>&nbsp;7.2.1</td>
+<td>&nbsp;≥1.0.0</td>
+</tr>
+<tr>
+<td>Mobvista</td>
+<td>&nbsp;8.11.2</td>
+<td>&nbsp;≥1.0.0</td>
+</tr>
+<tr>
+<td>StartApp</td>
+<td>&nbsp;3.8.4</td>
+<td>&nbsp;≥1.0.0</td>
+</tr>
+<tr>
+<td>Chartboost</td>
+<td>&nbsp;7.2.0</td>
+<td>&nbsp;≥1.2.0</td>
+</tr>
+<tr>
+<td>Vungle</td>
+<td>&nbsp;6.2.5</td>
+<td>&nbsp;≥1.3.0</td>
+</tr>
+<tr>
+<td>AdMob</td>
+<td>&#8211;</td>
+<td>&nbsp;≥1.4.0</td>
+</tr>
+<tr>
+<td>Ogury</td>
+<td>2.2.12</td>
+<td>&nbsp;≥1.5.0</td>
+</tr>
+<tr>
+<td>AdColony</td>
+<td>3.3.3</td>
+<td>&nbsp;≥1.6.0</td>
+</tr>
+<tr>
+<td>Facebook</td>
+<td>4.28.1</td>
+<td>&nbsp;≥1.8.0</td>
+</tr>
+<tr>
+<td>MyTarget</td>
+<td>5.1.2</td>
+<td>&nbsp;≥1.10.0</td>
+</tr>
+</tbody>
+</table>
+				</div>
+			</div> <!-- .et_pb_text -->
+			</div> <!-- .et_pb_column --><div class="et_pb_column et_pb_column_1_4 et_pb_column_1    et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				<div class="et_pb_module et_pb_sidebar_0 et_pb_widget_area et_pb_bg_layout_light clearfix et_pb_widget_area_right">
+				
+				
+				<div id="custom_html-3" class="widget_text et_pb_widget widget_custom_html"><h4 class="widgettitle">Contents</h4><div class="textwidget custom-html-widget"><ul>
+<li><a href="#1" style="color: #cc3366;"><strong>1. API Key</strong></a></li>
+<li><a href="#2" style="color: #cc3366;"><strong>2. Android Demo App</strong></a></li>
+<li><a href="#3" style="color: #cc3366;"><strong>3. Integration Setup</strong></a></li>
+<li style="padding-left: 15px;"><a href="#3.1"><strong>3.1 Prerequisites</strong></a></li>
+<li style="padding-left: 15px;"><a href="#3.2"><strong>3.2 Gradle Integration</strong></a></li>
+<li style="padding-left: 15px;"><a href="#3.3"><strong>3.3 Enable Multidex</strong></a></li>
+<li style="padding-left: 15px;"><a href="#3.4"><strong>3.4 Manifest Setup</strong></a></li>
+<li style="padding-left: 15px;"><a href="#3.5"><strong>3.5 GDPR (EU &#x26; EEA Users Only)</strong></a></li>
+<li style="padding-left: 30px;"><a href="#3.5.1">3.5.1 Smart Consent</a></li>
+<li style="padding-left: 30px;"><a href="#3.5.2">3.5.2 Consent Window</a></li>
+<li style="padding-left: 30px;"><a href="#3.5.3">3.5.3 Consent Function</a></li>
+<li style="padding-left: 15px;"><a href="#3.6"><strong>3.6 SDK Initialisation</strong></a></li>
+<li style="padding-left: 15px;"><a href="#3.7"><strong>3.7 Interstitial Ads</strong></a></li>
+<li style="padding-left: 30px;"><a href="#3.7.1">3.7.1 Basic</a></li>
+<li style="padding-left: 30px;"><a href="#3.7.2">3.7.2 Advanced</a></li>
+<li style="padding-left: 45px;"><a href="#3.7.2.1">3.7.2.1 Delegates</a></li>
+<li style="padding-left: 45px;"><a href="#3.7.2.2">3.7.2.2 Manual pre-loading</a></li>
+<li style="padding-left: 15px;"><a href="#3.8"><strong>3.8 Rewarded Video</strong></a></li>
+<li style="padding-left: 30px;"><a href="#3.8.1">3.8.1 Basic</a></li>
+<li style="padding-left: 30px;"><a href="#3.8.2">3.8.2 Advanced</a></li>
+<li style="padding-left: 45px;"><a href="#3.8.2.1">3.8.2.1 Delegates</a></li>
+<li style="padding-left: 45px;"><a href="#3.8.2.2">3.8.2.2 Manual pre-loading</a></li>
+<li style="padding-left: 30px;"><a href="#3.8.3">3.8.3 Credit Reward</a></li>
+<li style="padding-left: 15px;"><a href="#3.9"><strong>3.9 Banner Ads</strong></a></li>
+<li style="padding-left: 30px;"><a href="#3.9.1">3.9.1 Basic</a></li>
+<li style="padding-left: 30px;"><a href="#3.9.2">3.9.2 Advanced</a></li>
+<li style="padding-left: 45px;"><a href="#3.9.2.1">3.9.2.1 Delegates</a></li>
+<li style="padding-left: 45px;"><a href="#3.9.2.2">3.9.2.2 Custom position</a></li>
+<li style="padding-left: 45px;"><a href="#3.9.2.3">3.9.2.3 Auto refresh</a></li>
+<li style="padding-left: 45px;"><a href="#3.9.2.4">3.9.2.4 Banner height</a></li>
+<li><a href="#4" style="color: #cc3366;"><strong>4. Advanced Features</strong></a></li>
+<li style="padding-left: 15px;"><a href="#4.1"><strong>4.1 Test Mode</strong></a></li>
+<li style="padding-left: 15px;"><a href="#4.2"><strong>4.2 Auto Load</strong></a></li>
+<li style="padding-left: 15px;"><a href="#4.3"><strong>4.3 Error codes</strong></a></li>
+<li><a href="#5" style="color: #cc3366;"><strong>5. Third-Party Integration Versions</strong></a></li>
+</ul></div></div> <!-- end .et_pb_widget -->
+			</div> <!-- .et_pb_widget_area -->
+			</div> <!-- .et_pb_column -->
+				
+				
+			</div> <!-- .et_pb_row -->
+				
+				
+			</div> <!-- .et_pb_section -->					</div> <!-- .entry-content -->
+
+				
+				</article> <!-- .et_pb_post -->
+
+			
+
+</div> <!-- #main-content -->
+
+
+	<span class="et_pb_scroll_top et-pb-icon"></span>
+
+
+			<footer id="main-footer">
+				
+<div class="container">
+	<div id="footer-widgets" class="clearfix">
+	<div class="footer-widget"><div id="nav_menu-2" class="fwidget et_pb_widget widget_nav_menu"><h4 class="title">Corporate</h4><div class="menu-secondary-items-container"><ul id="menu-secondary-items" class="menu"><li id="menu-item-48252" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48252"><a href="../blog/index.html">Blog</a></li>
+<li id="menu-item-48254" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48254"><a href="../contact/index.html">Contact</a></li>
+<li id="menu-item-48255" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48255"><a href="https://support.appmediation.com/portal/home">Support</a></li>
+<li id="menu-item-48915" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48915"><a href="https://appmediation.workable.com/">Careers</a></li>
+</ul></div></div> <!-- end .fwidget --></div> <!-- end .footer-widget --><div class="footer-widget"><div id="nav_menu-3" class="fwidget et_pb_widget widget_nav_menu"><h4 class="title">Legal</h4><div class="menu-legal-container"><ul id="menu-legal" class="menu"><li id="menu-item-48267" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48267"><a href="../legal/index.html">Legal</a></li>
+<li id="menu-item-48268" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48268"><a href="../privacy/index.html">Privacy</a></li>
+<li id="menu-item-48265" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48265"><a href="../coppa/index.html">COPPA</a></li>
+<li id="menu-item-48266" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48266"><a href="../terms-and-conditions/index.html">Terms and Conditions</a></li>
+</ul></div></div> <!-- end .fwidget --></div> <!-- end .footer-widget --><div class="footer-widget"><div id="zoom-social-icons-widget-2" class="fwidget et_pb_widget zoom-social-icons-widget"><h4 class="title">Follow us</h4>
+		
+		<ul class="zoom-social-icons-list zoom-social-icons-list--without-canvas zoom-social-icons-list--rounded">
+
+			
+								<li class="zoom-social_icons-list__item">
+					<a class="zoom-social_icons-list__link"
+					   href="https://www.facebook.com/appmediation/"
+						target="_blank"											>
+																		
+                        
+						<span class="zoom-social_icons-list-span fa fa-facebook"
+							data-hover-rule="color" data-hover-color="#be4166"							  style="color : #ffffff; font-size: 18px; padding:8px"
+						></span>
+
+													<span
+								class="zoom-social_icons-list__label">Facebook</span>
+											</a>
+				</li>
+
+			
+								<li class="zoom-social_icons-list__item">
+					<a class="zoom-social_icons-list__link"
+					   href="https://twitter.com/tryappmediation"
+						target="_blank"											>
+																		
+                        
+						<span class="zoom-social_icons-list-span fa fa-twitter"
+							data-hover-rule="color" data-hover-color="#be4166"							  style="color : #ffffff; font-size: 18px; padding:8px"
+						></span>
+
+													<span
+								class="zoom-social_icons-list__label">Twitter</span>
+											</a>
+				</li>
+
+			
+								<li class="zoom-social_icons-list__item">
+					<a class="zoom-social_icons-list__link"
+					   href="https://www.linkedin.com/company/18387871/"
+						target="_blank"											>
+																		
+                        
+						<span class="zoom-social_icons-list-span fa fa-linkedin"
+							data-hover-rule="color" data-hover-color="#be4166"							  style="color : #ffffff; font-size: 18px; padding:8px"
+						></span>
+
+													<span
+								class="zoom-social_icons-list__label">Linkedin</span>
+											</a>
+				</li>
+
+			
+								<li class="zoom-social_icons-list__item">
+					<a class="zoom-social_icons-list__link"
+					   href="https://www.instagram.com/appmediation/"
+						target="_blank"											>
+																		
+                        
+						<span class="zoom-social_icons-list-span socicon socicon-instagram"
+							data-hover-rule="color" data-hover-color="#ffffff"							  style="color : #ffffff; font-size: 18px; padding:8px"
+						></span>
+
+													<span
+								class="zoom-social_icons-list__label">Instagram</span>
+											</a>
+				</li>
+
+			
+		</ul>
+
+		</div> <!-- end .fwidget --></div> <!-- end .footer-widget --><div class="footer-widget last"><div id="text-6" class="fwidget et_pb_widget widget_text"><h4 class="title">Reach us</h4>			<div class="textwidget"><p><strong>Estonia:</strong><br />
+Kentmanni 4, 10116 Tallinn, Estonia</p>
+<p><strong>Spain:</strong><br />
+Carrer Mare de Déu dels Desemparats 3, Local D 08012 Barcelona, Spain</p>
+<p><strong>email:</strong><br />
+support@appmediation.com</p>
+</div>
+		</div> <!-- end .fwidget --></div> <!-- end .footer-widget -->	</div> <!-- #footer-widgets -->
+</div>	<!-- .container -->
+
+		
+				<div id="footer-bottom">
+					<div class="container clearfix">
+				<p id="footer-info">Copyright © 2019 <a href="../index.html">Appmediation</a></p>					</div>	<!-- .container -->
+				</div>
+			</footer> <!-- #main-footer -->
+		</div> <!-- #et-main-area -->
+
+
+	</div> <!-- #page-container -->
+
+	<!-- Instagram Feed JS -->
+<script type="text/javascript">
+var sbiajaxurl = "../wp-admin/admin-ajax.html";
+</script>
+<script>jQuery(document).ready(function(){jQuery(".kiwi-logo-carousel-default").bxSlider({mode:"horizontal",speed:500,slideMargin:0,infiniteLoop:true,hideControlOnEnd:false,captions:false,ticker:false,tickerHover:false,adaptiveHeight:false,responsive:true,pager:false,controls:true,autoControls:false,minSlides:1,maxSlides:4,moveSlides:1,slideWidth:200,auto:true,pause:4000,useCSS:false});jQuery(".kiwi-logo-carousel-framework").bxSlider({mode:"horizontal",speed:500,slideMargin:40,infiniteLoop:true,hideControlOnEnd:false,captions:false,ticker:false,tickerHover:false,adaptiveHeight:false,responsive:true,pager:false,controls:false,autoControls:false,minSlides:1,maxSlides:4,moveSlides:1,slideWidth:200,auto:true,pause:4000,useCSS:false});jQuery(".kiwi-logo-carousel-partners").bxSlider({mode:"horizontal",speed:500,slideMargin:20,infiniteLoop:true,hideControlOnEnd:false,captions:false,ticker:false,tickerHover:false,adaptiveHeight:false,responsive:true,pager:false,controls:false,autoControls:false,minSlides:1,maxSlides:4,moveSlides:1,slideWidth:200,auto:true,pause:4000,useCSS:false});jQuery(".kiwi-logo-carousel-past-events").bxSlider({mode:"horizontal",speed:500,slideMargin:10,infiniteLoop:true,hideControlOnEnd:false,captions:false,ticker:false,tickerHover:false,adaptiveHeight:false,responsive:true,pager:false,controls:true,autoControls:false,minSlides:1,maxSlides:4,moveSlides:1,slideWidth:200,auto:true,pause:4000,useCSS:false});});</script>	<script type="text/javascript">
+		var et_animation_data = [];
+	</script>
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NV2RR9V"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><script type='text/javascript'>
+/* <![CDATA[ */
+var sb_instagram_js_options = {"sb_instagram_at":"","font_method":"svg"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../wp-content/plugins/instagram-feed/js/sb-instagram.min73b9.js?ver=1.10.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_shortcodes_strings = {"previous":"Previous","next":"Next"};
+var et_pb_custom = {"ajaxurl":"https:\/\/appmediation.com\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/appmediation.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/appmediation.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"f3e27178a1","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","et_ab_log_nonce":"f272f84ef8","fill_message":"Please, fill in the following fields:","contact_error_message":"Please, fix the following errors:","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"Previous","next":"Next","wrong_captcha":"You entered the wrong number in captcha.","is_builder_plugin_used":"","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","is_ab_testing_active":"","page_id":"47828","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"no","is_shortcode_tracking":""};
+var et_pb_box_shadow_elements = [];
+/* ]]> */
+</script>
+<script type='text/javascript' src='../wp-content/themes/Divi/js/custom.minee9a.js?ver=3.2.2'></script>
+<script type='text/javascript' src='../wp-content/plugins/social-icons-widget-by-wpzoom/assets/js/social-icons-widget-frontenda4d5.js?ver=20170209'></script>
+<script type='text/javascript' src='../wp-content/plugins/bloom/core/admin/js/commonef85.js?ver=3.7'></script>
+<script type='text/javascript' src='../wp-content/plugins/divi-testimonial-slider/assets/js/owl.carousel.min.js'></script>
+<script type='text/javascript' src='../wp-content/plugins/divi-testimonial-slider/assets/js/b3_equalheight.js'></script>
+<script type='text/javascript' src='../wp-includes/js/wp-embed.mind87f.js?ver=4.9.9'></script>
+<script type='text/javascript' src='../wp-content/plugins/kiwi-logo-carousel/third-party/jquery.bxslider/jquery.bxsliderd87f.js?ver=4.9.9'></script>
+
+<!-- Child theme custom CSS created by Divi Children Engine - http://divi4u.com -->
+<style type="text/css" media="screen">
+ #main-header {box-shadow:none; -webkit-box-shadow:none; -moz-box-shadow:none;}
+ #main-header.et-fixed-header {box-shadow:none !important; -webkit-box-shadow:none !important; -moz-box-shadow:none !important;}
+ #et-secondary-menu {float:none; text-align: left}
+ #et-secondary-nav {margin-left: 25px;}
+ #et-secondary-nav li:last-child {margin-right: 0 !important;}
+ #footer-widgets {padding-top:30px;}
+ .footer-widget {margin-bottom:29px !important;}
+ .footer-widget li:before {display:none;}
+ .footer-widget li {padding-left: 0!important;}
+ #footer-info, #footer-bottom .et-social-icons {float: none; text-align: center;}
+ #footer-bottom .et-social-icon:first-of-type {margin-left: 0 !important;}
+ #footer-bottom .et-social-icons {padding: 20px 0;}
+ .dce-credits-separator {padding: 0 6px;}
+ #footer-info a {color:#cc3366;}
+ #footer-info a {font-weight: 600;}
+ #sidebar h4.widgettitle {font-size: 16px; color: #cc3366; line-height: 1em; font-weight: 700; text-transform: uppercase; font-style: normal;}
+ #sidebar li, #sidebar .textwidget, #sidebar li a {font-size:14px; color: #5a5a5a; line-height: 1.7em;}
+ #sidebar li, #sidebar .textwidget, #sidebar li a {font-size:14px; color: #5a5a5a;}
+ #sidebar li a:hover, #sidebar .textwidget a:hover {color:#82c0c7!important;}
+ #footer-bottom .et-social-facebook a {color:#3b5998;}
+ #footer-bottom .et-social-facebook  a:hover {color:#2d4373!important;}
+ #footer-bottom .et-social-twitter a {color:#00aced;}
+ #footer-bottom .et-social-twitter a:hover {color:#0084b4!important;}
+ #footer-bottom .et-social-linkedin a {color:#007bb6;}
+ #footer-bottom .et-social-linkedin a:hover {color:#005983!important;}
+ #footer-bottom ul.et-social-icons li {margin-left:10px;}
+ .dce_row {padding: 0;}
+ .dce_post_title, .dce_post_meta, .dce_featured_image, .dce_post_content, .dce_post_shortcode, .dce_post_code, .dce_post_comments, .dce_spacer {padding: 0;}
+ .dce_hero_image .et_pb_parallax_css, .dce_background_image .et_pb_parallax_css {overflow: hidden; position: absolute; width: 100%; height: 100%; background-repeat: no-repeat; background-attachment: fixed; background-position: top center; background-size: cover;}
+ #dce-custom-post.dce-fullwidth {width: 100%; max-width: 100%;padding: 0;}
+ #dce-custom-post.dce-sidebar .dce_row, #dce-custom-post.dce-sidebar .et_pb_row {width: 100%;}
+ #dce-custom-post.dce-sidebar .dce_hero_image .dce_row, #dce-custom-post.dce-sidebar .dce_background_image .dce_row {width: 80%;}
+ .dce_hero_image {padding: 100px 0 100px 0;}
+ .dce_backimg {padding: 50px 0 50px 0;}
+ h1.dce-post-title {color: #333; margin-top: 0px; margin-bottom: 0px; margin-left: 0%; margin-right: 0%; text-align: left;}
+ #dce-custom-post .post-meta { margin-top: 0px; margin-bottom: 0px; margin-left: 0%; margin-right: 0%; text-align: left;}
+ #dce-custom-post {font-size: 14px; line-height: 1.7em;}
+ #dce-custom-post .dce_spacer {height: 50px;}
+ .single .post-meta {color: #666666;}
+ .single .post-meta a, .single .dce-post-tags a {color: #cc3366 !important;}
+ .single .post-meta a:hover, .single .dce-post-tags a:hover {color: #81277c !important;}
+ .single .dce-postmeta-separator {padding: 0 6px; color: #666; }
+ #custom_sidebar_module_1 .et_pb_widget {margin-bottom: 30px;}
+ #custom_sidebar_module_1 li a:hover, #custom_sidebar_module_1 .textwidget a:hover {color:#82c0c7!important;}
+</style>
+<!-- End Child theme custom CSS -->
+
+</body>
+</html>
